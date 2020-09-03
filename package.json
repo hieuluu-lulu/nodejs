@@ -1,0 +1,48 @@
+{
+  "name": "it-education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write --tab-width 4 src/**/*.{js,json,scss}",
+    "start": "nodemon --inspect src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "listen": "node-sass --watch src/resources/scss/ --output src/public/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieuluu-lulu/nodejs.git"
+  },
+  "keywords": [
+    "it",
+    "education",
+    "nodejs",
+    "js"
+  ],
+  "author": "hieuluu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieuluu-lulu/nodejs/issues"
+  },
+  "homepage": "https://github.com/hieuluu-lulu/nodejs#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write --tab-width 4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.0",
+    "mongoose-delete": "^0.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mongoose-slug-generator": "^1.0.4",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.0"
+  }
+}

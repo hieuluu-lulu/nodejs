@@ -1,0 +1,21 @@
+
+<div class="container mt-4">
+        <div class="row courses-content">
+            <div class="col-xl-3">
+            <button type="button" class="btn btn-success btn-lg">HỌC NGAY</button>
+            <ul class="list-group">
+                    <li class="list-group-item">Tổng số ... Videos</li>     
+                    <li class="list-group-item">{{course.level}}</li>
+                    <li class="list-group-item">Cần ... giờ để học</li>
+                    <li class="list-group-item">Truy cập mọi nơi, mọi lúc</li>
+                </ul>
+            </div>
+            <div class="col-xl-9">
+                <h2>{{course.name}}</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{course.videoId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>{{course.description}}</p>
+            </div>
+        </div>
+</div>

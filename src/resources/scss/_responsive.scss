@@ -1,0 +1,14 @@
+@media (max-width: 1023px) {
+    .learn-more-btn-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav__pc {
+        display: none;
+    }
+}
+@media (max-width: 739px) and (min-width: 0px) {
+    .nav__mobile {
+        width: 100%;
+    }
+}
